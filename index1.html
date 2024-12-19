@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Simples</title>
+    <style>
+        /* Propriedades de Layout e Flexbox */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: aquamarine
+        }
+
+        header {
+            background-color: #333;
+            height: 50px;
+        }
+
+        header h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 8px;
+            color: aliceblue;
+        }
+
+        main {
+            resize: horizontal;
+            overflow: hidden;
+            display: flex;
+            margin: 4em;
+            padding-left: 5%;
+            padding-right: 5%;
+            flex: 1;
+            background-color: aquamarine
+        }
+
+        .card {
+            margin: 15vh;
+            padding: 0.5em;
+            height: 225px;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13px;
+            flex: auto;
+            box-shadow: 0px 0px 8px gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card h2 {
+            text-align: center;
+            margin-bottom: 7px;
+        }
+        
+        .card p {
+            text-align: center;
+            margin-top: 7px;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            height: 25px;
+            padding: 5px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Projeto 1</h2>
+            <p>Descrição breve do projeto, incluindo suas funcionalidades e tecnologias utilizadas.</p>
+        </div>
+        <div class="card">
+            <h2>Projeto 2</h2>
+            <p>Descrição breve do projeto, incluindo suas funcionalidades e tecnologias utilizadas.</p>
+        </div>
+        <div class="card">
+            <h2>Projeto 3</h2>
+            <p>Descrição breve do projeto, incluindo suas funcionalidades e tecnologias utilizadas.</p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Meu Nome. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
