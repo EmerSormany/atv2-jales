@@ -1,0 +1,201 @@
+<!--
+Propriedades Utilizadas:
+background-color
+background-image
+background-position
+background-repeat
+background-size
+border-radius
+box-shadow
+color
+display
+flex-wrap
+font-family
+font-style
+font-weight
+height
+hover
+justify-content
+margin
+margin-bottom
+margin-left
+margin-right
+margin-top
+overflow
+padding
+text-align
+text-decoration
+text-transform
+width
+https://via.placeholder.com/1920x1080
+https://via.placeholder.com/300x200
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibição de Produtos</title>
+    <style>
+        /* Configurações gerais */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: azure;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        body::after{
+            content: "";
+            display: block;
+            height: 18px;
+            width: 100%;
+            background-color: azure;
+            position: absolute;
+            bottom: 0;
+        }
+
+        header {
+            background-color: azure;
+            color: black;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            text-decoration: underline;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        main {
+            flex: 1;
+            padding: 0.5rem;
+            background-color: darkgray;
+        }
+        
+        .product-line {
+            display: flex;
+            justify-content: center;
+        }
+
+        .product-card {
+            max-width: 320px;
+            margin: 0.5%;
+            background-color: azure;
+            padding: 10px 10px 15px 10px;
+            border-radius: 5px;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 320px;
+            min-width: 230px;
+            aspect-ratio: 3/2;
+            background-color: darkgray;
+            border-radius: 5px;
+        }
+
+        .product-info {
+            margin-top: 2%;
+        }
+
+        .product-info h2 {
+        }
+
+        .product-info p {
+            font-size: small;
+            color: darkgrey;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .product-info a {
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            margin-top: 10px;
+            border-radius: 4px
+        }
+
+        .product-info a:hover {
+            background-color: #0056b3
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Produtos em Destaque</h1>
+    </header>
+    <main>
+        <div class="product-line">
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h2>Produto 1</h2>
+                    <p>Descrição breve do produto 1.</p>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h2>Produto 2</h2>
+                    <p>Descrição breve do produto 2.</p>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h2>Produto 3</h2>
+                    <p>Descrição breve do produto 3.</p>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-line">
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h2>Produto 4</h2>
+                    <p>Descrição breve do produto 4.</p>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h2>Produto 5</h2>
+                    <p>Descrição breve do produto 5.</p>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h2>Produto 6</h2>
+                    <p>Descrição breve do produto 6.</p>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
